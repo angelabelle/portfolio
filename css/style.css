@@ -204,7 +204,9 @@ footer p{
 		z-index: 10;
 		height: auto;
 		width: 100%;
+
 	}
+
 
 #text img {
 	margin-left: 10%;
@@ -224,6 +226,8 @@ footer p{
 	width: 30%;
 
 }
+
+
 
 #video #text {
 	color: white;
@@ -246,6 +250,8 @@ footer p{
 text-align: center;
 }
 
+
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -265,13 +271,21 @@ text-align: center;
   height: 100%;
 }
 
+#description {
+max-width: 100%;
+white-space:normal;
+padding-bottom: 50px;
+}
 
 @media only screen and (max-width: 600px){
+
+
+
 	#carousel {
 		max-width: 600px;
 		overflow-x: hidden;
 		overflow-y: scroll;
-		white-space:nowrap;
+		/* white-space:nowrap; */
 		margin-top: 100px;
 		width: 100%;
 
@@ -394,5 +408,6 @@ text-align: center;
 		transform: none;
 
 	}
+
 
 }

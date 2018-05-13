@@ -172,7 +172,7 @@ footer p{
 /* 100% Image Width on Smaller Screens */
 
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9{
     position: fixed;
     display: none;
     width: 100%;
@@ -310,7 +310,7 @@ padding-bottom: 50px;
 
 }
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9{
 		    position: fixed;
 		    display: none;
 		    width: 100%;

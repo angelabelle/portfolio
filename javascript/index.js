@@ -8,7 +8,7 @@ var index = 0;
 
 function setup() {
 createCanvas(windowWidth,windowHeight);
-
+frameRate (80);
 }
 
 function draw() {

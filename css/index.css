@@ -44,7 +44,7 @@ header {
 	top: 0;
   left: 0;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	position:fixed;
 	font-weight:800;
 	color:#fff;
@@ -64,7 +64,7 @@ header ul {
 header ul li {
 	list-style-type:none;
 	display: list-item;
-	line-height: 70px;
+	line-height: 30px;
 	float: left;
 	width: 100px;
 	text-align: center;
@@ -100,11 +100,11 @@ header ul li a { /* for links we need additional styling */
 }
 
 .info h1 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', monospace;
 	letter-spacing: 3px;
 	text-align: center;
-	font-size: 40px;
-	color:#000000;
+	font-size: 150px;
+	color:#FFFFFF;
 	margin-top: 0px;
 }
 
@@ -148,6 +148,7 @@ footer {
 
 footer p{
 	padding: 35px 0px;
-	color: #000;
+  padding-bottom: 0px;
+	color: #FFF;
 	font-weight: 700;
 }

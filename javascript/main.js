@@ -98,3 +98,13 @@ function on9() {
 function off9() {
     document.getElementById("overlay-9").style.display = "none";
 }
+
+
+
+function on10() {
+    document.getElementById("overlay-10").style.display = "block";
+}
+
+function off10() {
+    document.getElementById("overlay-10").style.display = "none";
+}

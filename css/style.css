@@ -44,7 +44,7 @@ header ul {
 header ul li {
 	list-style-type:none;
 	display: list-item;
-	line-height: 70px;
+	line-height: 30px;
 	float: left;
 	width: 100px;
 	text-align: center;
@@ -58,6 +58,7 @@ header ul li a { /* for links we need additional styling */
 	font-size: 12px;
 
 }
+
 
 #list1 {
 	padding:0;
@@ -172,7 +173,7 @@ footer p{
 /* 100% Image Width on Smaller Screens */
 
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9,#overlay-10{
     position: fixed;
     display: none;
     width: 100%;
@@ -310,7 +311,7 @@ padding-bottom: 50px;
 
 }
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10{
 		    position: fixed;
 		    display: none;
 		    width: 100%;

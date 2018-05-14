@@ -27,6 +27,7 @@ function off3() {
     document.getElementById("overlay-3").style.display = "none";
 }
 
+
 function on4() {
     document.getElementById("overlay-4").style.display = "block";
 }
@@ -103,8 +104,35 @@ function off9() {
 
 function on10() {
     document.getElementById("overlay-10").style.display = "block";
+
+    var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+
+        player.on('play', function() {
+            console.log('played the video!');
+        });
+
+        player.getVideoTitle().then(function(title) {
+            console.log('title:', title);
+        });
+
+
+    if ( iframe ) {
+   var player = new Vimeo.Player( iframe )
+   player.pause()
+}
+
 }
 
 function off10() {
     document.getElementById("overlay-10").style.display = "none";
+}
+
+
+function on11() {
+    document.getElementById("overlay-11").style.display = "block";
+}
+
+function off11() {
+    document.getElementById("overlay-11").style.display = "none";
 }

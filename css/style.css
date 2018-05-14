@@ -76,9 +76,6 @@ header ul li a { /* for links we need additional styling */
 	background-size: cover;
 	background-color: #ffffff;
 
-
-
-
 }
 
 .info h1 {
@@ -111,9 +108,9 @@ header ul li a { /* for links we need additional styling */
 	background-color: #ffffff;
 	opacity: 0.7;
 	color:#000000;
-	padding:50px;
 	padding-left: 20%;
 	padding-right: 20%;
+	padding-bottom: 20px;
 
 }
 
@@ -169,11 +166,22 @@ footer p{
 }
 
 
+#exhibitions{
+	padding-top: 0;
+	list-style: none;
+	text-align:center;
+	font-size: .5em;
+}
+
+#exhibitions p {
+	padding-top: 0;
+}
+
 
 /* 100% Image Width on Smaller Screens */
 
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9,#overlay-10{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9,#overlay-10,#overlay-11{
     position: fixed;
     display: none;
     width: 100%;
@@ -311,7 +319,7 @@ padding-bottom: 50px;
 
 }
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10,#overlay-11{
 		    position: fixed;
 		    display: none;
 		    width: 100%;

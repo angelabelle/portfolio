@@ -7,7 +7,7 @@ var nums = [1,50,80,5,20,170,100];
 var index = 0;
 
 function setup() {
-createCanvas(windowWidth,windowHeight);
+createCanvas(displayWidth, displayHeight);
 frameRate (80);
 }
 
@@ -48,6 +48,12 @@ function move() {
     y=0;
   }
 }
+
+
+function windowResized() {
+  resizeCanvas(displayWidth, displayHeight);
+}
+
 
 // write functions here
 

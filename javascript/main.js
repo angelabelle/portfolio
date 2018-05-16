@@ -136,3 +136,30 @@ function on11() {
 function off11() {
     document.getElementById("overlay-11").style.display = "none";
 }
+
+
+function on12() {
+    document.getElementById("overlay-12").style.display = "block";
+
+    var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+
+        player.on('play', function() {
+            console.log('played the video!');
+        });
+
+        player.getVideoTitle().then(function(title) {
+            console.log('title:', title);
+        });
+
+
+    if ( iframe ) {
+   var player = new Vimeo.Player( iframe )
+   player.pause()
+}
+
+}
+
+function off12() {
+    document.getElementById("overlay-12").style.display = "none";
+}

@@ -94,7 +94,7 @@ header ul li a { /* for links we need additional styling */
 	-webkit-border-radius: 50px;
 	border-radius: 250px;
 	margin: 0 auto;
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .info p {
@@ -180,7 +180,7 @@ footer p{
 /* 100% Image Width on Smaller Screens */
 
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9,#overlay-10,#overlay-11{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8, #overlay-9,#overlay-10,#overlay-11,#overlay-12{
     position: fixed;
     display: none;
     width: 100%;
@@ -190,7 +190,7 @@ footer p{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(0,0,0,0.90);
     z-index: 4;
     cursor: pointer;
 		overflow-y: scroll;
@@ -208,7 +208,6 @@ footer p{
     /* transform: translate(-50%,50%);
     -ms-transform: translate(-50%,-50%); */
 
-		opacity: 1.;
 		z-index: 10;
 		height: auto;
 		width: 100%;
@@ -221,7 +220,6 @@ footer p{
 	max-width: 700px;
 	width: 39%;
 	height: auto;
-	opacity: 100%;
 	z-index: 10;
 	float: left;
 
@@ -240,7 +238,6 @@ footer p{
 
 #video #text {
 	color: white;
-  opacity: 1.;
   height: auto ;
   width: 100%;
 
@@ -287,6 +284,18 @@ white-space:normal;
 padding-bottom: 50px;
 }
 
+
+.tres{
+	max-width:100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+}
+.tres img {
+	max-width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
 @media only screen and (max-width: 600px){
 
 
@@ -319,7 +328,7 @@ padding-bottom: 50px;
 
 }
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10,#overlay-11{
+		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10,#overlay-11,#overlay-12{
 		    position: fixed;
 		    display: none;
 		    width: 100%;
@@ -346,7 +355,6 @@ padding-bottom: 50px;
 		    color: white;
 		    /* transform: translate(-50%,50%);
 		    -ms-transform: translate(-50%,-50%); */
-				opacity: 1.;
 				height: auto ;
 				width: 100%;
 
@@ -358,7 +366,6 @@ padding-bottom: 50px;
 			margin-left: 0px;
 			height: auto;
 			width: 100%;
-			opacity: 100%;
 			z-index: 10;
 			float: none;
 
@@ -402,7 +409,6 @@ padding-bottom: 50px;
 		margin-left: 0px;
 		max-width: 80%;
 		height: auto;
-		opacity: 100%;
 		z-index: 10;
 		float: none;
 

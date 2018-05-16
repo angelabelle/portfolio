@@ -2,14 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cousine|Cute+Font|IBM+Plex+Mono|Poppins');
 
 
-canvas {
-width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -5;
-  overflow:hidden;
-}
+
+
+
 
   /* uncomment lines below if you want your canvas to cover the whole page
   you will also have to create canvas to the window dimensions
@@ -151,4 +146,12 @@ footer p{
   padding-bottom: 0px;
 	color: #FFF;
 	font-weight: 700;
+}
+
+canvas {
+max-width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -5;
 }

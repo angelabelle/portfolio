@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	 box-sizing: border-box;
 }
 
 header a:hover {
@@ -67,8 +68,12 @@ header ul li a { /* for links we need additional styling */
 #main {
 	width: 100%;
 
+}
 
-
+.project
+{
+padding-top: 70px;
+padding-bottom: 70px;
 }
 
 .info {
@@ -216,13 +221,21 @@ footer p{
 
 
 #text img {
-	margin-left: 10%;
 	max-width: 700px;
-	width: 39%;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	z-index: 10;
 	float: left;
 
+}
+
+#text #img2
+{
+	max-width: 700px;
+	width: 27%;
+	height: 100%;
+	z-index: 10;
+	float: left;
 }
 
 #info {
@@ -282,6 +295,8 @@ padding-right: 0px;
 max-width: 100%;
 white-space:normal;
 padding-bottom: 50px;
+padding-left: 20px;
+text-align: center;
 }
 
 
@@ -296,54 +311,30 @@ padding-bottom: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
-@media only screen and (max-width: 600px){
 
 
 
-	#carousel {
-		max-width: 600px;
-		overflow-x: hidden;
-		overflow-y: scroll;
-		/* white-space:nowrap; */
-		margin-top: 100px;
-		width: 100%;
-
-
-	}
-
-	#carousel .slide {
-				 width: 100%;
-				 float: left;
-				 overflow: hidden;
-				 clear: both;
-				 text-align: center;
-				 max-width: 100%
-	}
-
-	.slide img {
-		height: auto;
-		width: 60%;
-		box-shadow: 1px 1px 10px #999;
-		cursor: pointer;
-
+.grid
+{
+	width: 100%;
+	padding-top: 5%;;
+	padding-left: 7%;
+	padding-bottom: 7%;
+}
+.column3 img
+{
+	 width: 30%;
 }
 
-		#overlay,#overlay-3,#overlay-2,#overlay-4,#overlay-5,#overlay-6,#overlay-7,#overlay-8,#overlay-9,#overlay-10,#overlay-11,#overlay-12{
-		    position: fixed;
-		    display: none;
-		    width: 100%;
-		    height: 100%;
-		   	stop: 0;
-		    left: 0;
-		    right: 0;
-		    bottom: 0;
-		    background-color: rgba(0,0,0,0.95);
-		    z-index: 4;
-		    cursor: pointer;
-				overflow-y: scroll;
+.column4 img
+{
+	width: 22.3%;
+}
 
-		}
 
+
+
+@media only screen and (max-width: 750px){
 
 
 		#text{
@@ -355,20 +346,28 @@ padding-bottom: 50px;
 		    color: white;
 		    /* transform: translate(-50%,50%);
 		    -ms-transform: translate(-50%,-50%); */
-				height: auto ;
+				height: auto;
 				width: 100%;
 
 			}
 
 		#text img {
-			max-width: 50%;
-			margin-top:10%;
+			max-width: 100%;
 			margin-left: 0px;
 			height: auto;
 			width: 100%;
 			z-index: 10;
 			float: none;
 
+		}
+		#text #img2
+		{
+			max-width: 100%;
+			margin-left: 0px;
+			height: auto;
+			width: 100%;
+			z-index: 10;
+			float: none;
 		}
 
 		#info {
@@ -383,8 +382,33 @@ padding-bottom: 50px;
 
 		}
 
+		.project
+		{
+			padding-bottom: 70px;
+		}
+
 
 }
+
+@media only screen and (max-width:650px)
+{
+.grid
+{
+	width: 100%;
+	padding-left: 0px;
+	padding-bottom: 30%;
+}
+	.column3 img
+	{
+		 width: 100%;
+	}
+
+	.column4 img
+	{
+		width: 100%;
+	}
+}
+
 
 
 @media only screen and (max-width: 400px){
@@ -399,6 +423,7 @@ padding-bottom: 50px;
 			/* transform: translate(-50%,50%);
 			-ms-transform: translate(-50%,-50%); */
 			max-width: 400px;
+			width: 100%;
 			height: auto ;
 		}
 
@@ -407,7 +432,7 @@ padding-bottom: 50px;
 	#text img {
 		margin-top:10%;
 		margin-left: 0px;
-		max-width: 80%;
+		width: 400px;
 		height: auto;
 		z-index: 10;
 		float: none;
@@ -418,7 +443,7 @@ padding-bottom: 50px;
 		max-width: 100%;
 		width: 100%;
 		margin: 0px;
-		float: left;
+		float: right;
 		color: white;
 		clear: both;
 		transform: none;

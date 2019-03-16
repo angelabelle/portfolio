@@ -30,32 +30,35 @@
   </header>
 
 
-
+<div class = "project">
   <div id="text">
-    <div class="embed-container">
-      <iframe src="https://player.vimeo.com/video/270015756" width="640" height="488" frameborder="0" allowfullscreen></iframe> </div>
-  </div>
+  <img src="images/Large/code_art.png">
+</div>
+<div id="info">
+  <p>"You Have Changed"</p>
+  <p>Code Art</p>
+  <p>2018</p>
+  <br>
+  <br>
+  <p> I like the idea of random and changing pieces of art. I wanted to embed that into the piece. In the processing code, you can find more than one "random ()" function. It allows you to see the beauty in things that are not predetermined to be
+    in a specific time or place. As you hold down the mouse button, random triangles appear. When you move your cursor across the piece, it also manipulates different parts of the project. And at the end, you can hold down spacebar to pause and
+    create your own art.
+    <br> <br> CODE
+    <br> int x = 0; float r = 0; //PImage code; void setup() { size(1000, 1000 ); myCode1 = new Code(color(#ffffff,100), mouseX, 0, 20); myCode2 = new Code(color(#000000,100), mouseX, 0, 300); myCode3 = new Code(color(#000000), mouseX, 0, 500);
+    myCode4 = new Code(color(#000000,200), mouseX, 0, 200); noCursor (); frameRate(15); } void draw() { background(value[index]); myCode1.move(); myCode1.display(); myCode2.move(); myCode2.display(); myCode3.move(); myCode3.display(); myCode4.move();
+    myCode4.display(); stroke (0); if (mousePressed == true) { noStroke(); fill (#ffffff,random(50,200)); triangle (random (100,300),random (100,300), random (100,300), random (100,300), random (100,300),random (100,300)); triangle (random (100,500),random
+    (100,500), random (100,500), random (100,500), random (100,500),random (100,500)); triangle (random (300,1000),random (200,1000), random (200,1000), random (200,1000), random (200,1000),random (200,1000)); } stroke (0); translate (width+20,
+    height/5); rotate (2.25); noFill(); rect(mouseX, height/3, mouseY/2+20, mouseY/3+20); int inverseX = width-mouseX; int inverseY = height-mouseY; rect(inverseX-20, inverseY-30, (inverseY/2)-20, (inverseY/2)-20); fill(255, 204); rect(inverseX-100,
+    inverseY-100, (inverseY/2)-20, (inverseY/4)-20); fill(255, 155); rect(mouseX-200, 240, mouseY/10+30, mouseY/3+30); } void mouseClicked() { background (value[index]); index = index+1; if (index>value.length-1) { index = 0; } } Code myCode1;
+    Code myCode2; Code myCode3; Code myCode4; int[] value = {#E3E0E3,#FCF2C9, #FCDCC9, #C1FFE1}; int index = 0; class Code { color c; float xpos; float ypos; float xspeed; Code(color tempC, float tempXpos, float tempYpos, float tempXspeed) { c
+    = tempC; xpos = tempXpos; ypos = tempYpos; xspeed = tempXspeed; } void display() { noStroke(); fill(c); rect(xpos, ypos , random(1,20), random (300,800)); } void move() { xpos = xpos + xspeed; if (xpos > mouseX + 300) { xpos = mouseX-(random(50,200));
+    } } } void keyPressed() { noLoop(); } void keyReleased() { loop(); }
+    <br> ENDCODE
 
-  <div class="tres">
-    <img src="images/Large/tranceF1.png">
-    <img src="images/Large/tranceF2.png">
-    <img src="images/Large/tranceF3.png">
-  </div>
 
-  <div id="info">
-    <p>"Are you sleepy?"</p>
-    <p>Digital Video Art</p>
-    <p> 2018 </p>
-    <p id="description">
-      <br>I wanted to capture a short experience of sleep paralysis. Most of the time, it is horrifying. You don’t know what is going on. Sometimes you feel like it reflects reality too close, so you believe it is really happening.
-    </p>
+  </p>
+</div>
 
-  </div>
-
-
-  <footer>
-    <p>&copy; Angelabelle Abarientos 2018</p>
-  </footer>
 
 
 </body>

@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cousine|Cute+Font|IBM+Plex+Mono|Poppins');
 
+@font-face {
+    font-family: 'AvenirNextLTPro';
+src: url('fonts/AvenirNextLTPro-UltLtCn.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'FixtureItalic';
+    font-weight: bold;
+src: url('fonts/FixtureItalic-CondensedBlack.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Fixture';
+src: url('fonts/Fixture-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'AvenirNextLTProRegular';
+src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
+}
+
 /* uncomment lines below if you want your canvas to cover the whole page
   you will also have to create canvas to the window dimensions
   in your p5 sketch, use: createCanvas(windowWidth, windowHeight); */
@@ -19,6 +40,13 @@ html{
 .triangle {
     width: 400px;
     height: 400px;
+     vertical-align: top;
+      transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+    opacity: 50%;
+}
+.triangle:hover{
+    opacity: 100%;
 }
 #t1 {
 	position: absolute;
@@ -39,7 +67,20 @@ html{
 		font-size:1.7em;
 		text-align: center;
 		 text-transform: uppercase;
+         }
+
+.title h1
+{
+font-family: 'FixtureItalic',monospace;
 }
+
+.title p
+{
+    margin-top: 5px;
+    font-family: 'AvenirNextLTPro',monospace;
+}
+
+
 
 #t1:hover + #title1{
 	 display: block;
@@ -161,7 +202,7 @@ html{
 	 display: block;
 }
 header a:hover {
-    color: #a9b261;
+    color: #999;
 }
 
 a:visited {
@@ -219,7 +260,7 @@ header ul li a {
     /* for links we need additional styling */
     color: #c9c18d;
     text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Fixture', monospace;
     font-size: 1.5em;
 }
 
@@ -260,7 +301,7 @@ footer p {
 	margin-top: 10%;
     height:60%;
     overflow-y: scroll;
-
+    font-family: 'AvenirNextLTProRegular',monospace,sans-serif;
 }
 
 #about{
@@ -268,6 +309,7 @@ footer p {
 	margin-right: 15%;
 	margin-left: auto;
 	margin-top: 10%;
+    font-family: 'AvenirNextLTProRegular',monospace,sans-serif;
 }
 
 #contact{
@@ -275,6 +317,7 @@ footer p {
 	margin-right: 15%;
 	margin-left: auto;
 	margin-top: 10%;
+    font-family: 'AvenirNextLTProRegular',monospace,sans-serif;
 }
 
 @media only screen and (max-width:900px) {

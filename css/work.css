@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cousine|Cute+Font|IBM+Plex+Mono|Poppins');
 
+@font-face {
+    font-family: 'AvenirNextLTPro';
+src: url('fonts/AvenirNextLTPro-UltLtCn.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'FixtureItalic';
+    font-weight: bold;
+src: url('fonts/FixtureItalic-CondensedBlack.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Fixture';
+src: url('fonts/Fixture-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'AvenirNextLTProRegular';
+src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
+}
 /* uncomment lines below if you want your canvas to cover the whole page
   you will also have to create canvas to the window dimensions
   in your p5 sketch, use: createCanvas(windowWidth, windowHeight); */
@@ -161,7 +181,7 @@ html{
 	 display: block;
 }
 header a:hover {
-    color: #a9b261;
+    color: #999;
 }
 
 a:visited {
@@ -220,7 +240,7 @@ header ul li a {
     /* for links we need additional styling */
     color: #c9c18d;
     text-decoration: none;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Fixture', monospace;
     font-size: 1.5em;
 }
 

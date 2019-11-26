@@ -71,8 +71,10 @@ html{
 	bottom:15%;
 	left: 20%;
     /* The points are: centered top, left bottom, right bottom */
+-webkit-clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
     clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
-	-webkit-clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
+
+	
 }
 #t2:hover + #title2{
 	 display: block;
@@ -85,8 +87,9 @@ html{
 	left: 10%;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(10% 50%, 30% 67%, 85% 50%);
 	-webkit-clip-path:polygon(10% 50%, 30% 67%, 85% 50%);
+    clip-path: polygon(10% 50%, 30% 67%, 85% 50%);
+	
 }
 #t3:hover + #title3{
 	 display: block;
@@ -99,8 +102,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(30% 45%, 5% 50%, 60% 65%);
 	-webkit-clip-path:polygon(30% 45%, 5% 50%, 60% 65%);
+    clip-path: polygon(30% 45%, 5% 50%, 60% 65%);
+	
 }
 
 #t4:hover + #title4{
@@ -115,8 +119,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
 	-webkit-clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
+    clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
+	
 }
 
 #t5:hover + #title5{
@@ -131,8 +136,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(25% 70%, 0 70%, 50% 50%);
 	-webkit-clip-path:polygon(25% 70%, 0 70%, 50% 50%);
+    clip-path: polygon(25% 70%, 0 70%, 50% 50%);
+	
 }
 #t6:hover + #title6{
 	 display: block;
@@ -144,8 +150,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(50% 64%, 25% 70%, 100% 100%);
 	-webkit-clip-path:polygon(50% 64%, 25% 70%, 100% 100%);
+    clip-path: polygon(50% 64%, 25% 70%, 100% 100%);
+	
 }
 #t7:hover + #title7{
 	 display: block;
@@ -157,8 +164,9 @@ html{
 	left: 3%;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
 	-webkit-clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
+    clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
+	
 }
 #t8:hover + #title8{
 	 display: block;
@@ -171,8 +179,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(30% 70%, 40% 90%, 67% 100%);
 	-webkit-clip-path:polygon(30% 70%, 40% 90%, 67% 100%);
+    clip-path: polygon(30% 70%, 40% 90%, 67% 100%);
+	
 }
 #t9:hover + #title9{
 	 display: block;
@@ -184,8 +193,9 @@ html{
 	left: ;
 	top: ;
     /* The points are: centered top, left bottom, right bottom */
-    clip-path: polygon(65% 55%,45% 50%, 80% 100%);
 	-webkit-clip-path: polygon(65% 55%,45% 50%, 80% 100%);
+    clip-path: polygon(65% 55%,45% 50%, 80% 100%);
+	
 }
 #t10:hover + #title10{
 	 display: block;

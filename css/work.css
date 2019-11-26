@@ -319,6 +319,7 @@ overflow-y: scroll;
     max-width: 350px;
     height: 90vh;
     overflow-y: scroll;
+	font-family: 'AvenirNextLTProRegular',monospace,sans-serif;
     /* float: left; */
 
 }

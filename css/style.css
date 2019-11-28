@@ -37,17 +37,7 @@ html{
 	height: 100vh;
 }
 
-.triangle {
-    width: 400px;
-    height: 400px;
-     vertical-align: top;
-      transition: opacity 0.3s;
-      -webkit-transition: opacity 0.3s;
-    opacity: 50%;
-}
-.triangle:hover{
-    opacity: 100%;
-}
+
 #t1 {
 	position: absolute;
 	bottom:40%;
@@ -69,16 +59,6 @@ html{
 		 text-transform: uppercase;
          }
 
-.title h1
-{
-font-family: 'FixtureItalic',monospace;
-}
-
-.title p
-{
-    margin-top: 5px;
-    font-family: 'AvenirNextLTPro',monospace;
-}
 
 
 
@@ -340,22 +320,19 @@ footer p {
 }
 
 @media only screen and (max-width:600px) {
-header
+#navBar
 {
 	display: none;
 }
 .icon
 {
 	position: absolute;
-	top:25px;
+	top:20px;
 	right: 20px;
 	display: block;
 	float: right;
 }
-.triangle {
-    width: 200px;
-    height: 300px;
-}
+
 
 .title {
 		position: fixed;

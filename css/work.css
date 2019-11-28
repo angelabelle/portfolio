@@ -2,24 +2,25 @@
 
 @font-face {
     font-family: 'AvenirNextLTPro';
-src: url('fonts/AvenirNextLTPro-UltLtCn.otf') format("opentype");
+    src: url('fonts/AvenirNextLTPro-UltLtCn.otf') format("opentype");
 }
 
 @font-face {
     font-family: 'FixtureItalic';
     font-weight: bold;
-src: url('fonts/FixtureItalic-CondensedBlack.ttf') format("truetype");
+    src: url('fonts/FixtureItalic-CondensedBlack.ttf') format("truetype");
 }
 
 @font-face {
     font-family: 'Fixture';
-src: url('fonts/Fixture-Regular.ttf') format("truetype");
+    src: url('fonts/Fixture-Regular.ttf') format("truetype");
 }
 
 @font-face {
     font-family: 'AvenirNextLTProRegular';
-src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
+    src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
 }
+
 /* uncomment lines below if you want your canvas to cover the whole page
   you will also have to create canvas to the window dimensions
   in your p5 sketch, use: createCanvas(windowWidth, windowHeight); */
@@ -31,175 +32,205 @@ src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
     padding: 0;
 }
 
-html{
-	width:100vw;
-	height: 100vh;
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
 .triangle {
     width: 400px;
     height: 400px;
 }
+
+.triangle {
+    width: 400px;
+    height: 400px;
+     vertical-align: top;
+      transition: opacity 0.3s;
+      -webkit-transition: opacity 0.3s;
+      opacity: .5;
+    -khtml-opacity: .5;
+}
+.triangle:hover{
+    opacity: 1;
+    -khtml-opacity: 1;
+}
+
 #t1 {
-	position: absolute;
-	bottom:40%;
-	left: -50px;
+    position: absolute;
+    bottom: 40%;
+    left: -50px;
     /* The points are: centered top, left bottom, right bottom */
     clip-path: polygon(30% 60%, 0% 85%, 100% 100%);
-	-webkit-clip-path:polygon(30% 60%, 0% 85%, 100% 100%);
+    -webkit-clip-path: polygon(30% 60%, 0% 85%, 100% 100%);
 }
 
 .title {
-		width 20%;
-		max-width: 400px;
-		position:fixed;
-		top:30%;
-		right:15%;
-		display:none;
-		color: #000;
-		font-size:1.7em;
-		text-align: center;
-		 text-transform: uppercase;
+    width 20%;
+    max-width: 400px;
+    position: fixed;
+    top: 30%;
+    left: 65%;
+    display: none;
+    color: #000;
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
-#t1:hover + #title1{
-	 display: block;
+
+
+.title h1
+{
+font-family: 'FixtureItalic',monospace;
+}
+
+.title p
+{
+    margin-top: 5px;
+    font-family: 'AvenirNextLTPro', monospace;
+}
+
+#t1:hover+#title1 {
+    display: block;
 }
 
 #t2 {
-	position: absolute;
-	bottom:15%;
-	left: 20%;
-    /* The points are: centered top, left bottom, right bottom */
--webkit-clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
+    /* background: url("../images/composite3small.jpg"); */
+    position: absolute;
     clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
-
-	
+    -webkit-clip-path: polygon(40% 0%, 20% 5%, 70% 50%);
+    /* background-size: contain; */
+    /* position: relative; */
+    bottom: 15%;
+    left: 20%;
 }
-#t2:hover + #title2{
-	 display: block;
+
+#t2:hover+#title2 {
+    display: block;
 }
 
 #t3 {
-	position: absolute;
-	bottom:10%;
-	right: ;
-	left: 10%;
-	top: ;
+    position: absolute;
+    bottom: 10%;
+    right: ;
+    left: 10%;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path:polygon(10% 50%, 30% 67%, 85% 50%);
     clip-path: polygon(10% 50%, 30% 67%, 85% 50%);
-	
+    -webkit-clip-path: polygon(10% 50%, 30% 67%, 85% 50%);
 }
-#t3:hover + #title3{
-	 display: block;
+
+#t3:hover+#title3 {
+    display: block;
 }
 
 #t4 {
-	position: absolute;
-	bottom:5%;
-	right: 30%;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path:polygon(30% 45%, 5% 50%, 60% 65%);
     clip-path: polygon(30% 45%, 5% 50%, 60% 65%);
-	
+    -webkit-clip-path: polygon(30% 45%, 5% 50%, 60% 65%);
 }
 
-#t4:hover + #title4{
-	 display: block;
+#t4:hover+#title4 {
+    display: block;
 }
-
 
 #t5 {
-	position: absolute;
-	bottom:10%;
-	right: 20%;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
     clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
-	
+    -webkit-clip-path: polygon(25% 60%, 33% 80%, 80% 100%);
 }
 
-#t5:hover + #title5{
-	 display: block;
+#t5:hover+#title5 {
+    display: block;
 }
-
 
 #t6 {
-	position: absolute;
-	bottom:3%;
-	right: 7%;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 3%;
+    right: 7%;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path:polygon(25% 70%, 0 70%, 50% 50%);
     clip-path: polygon(25% 70%, 0 70%, 50% 50%);
-	
+    -webkit-clip-path: polygon(25% 70%, 0 70%, 50% 50%);
 }
-#t6:hover + #title6{
-	 display: block;
+
+#t6:hover+#title6 {
+    display: block;
 }
+
 #t7 {
-	position: absolute;
-	bottom:5%;
-	right: 5%;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path:polygon(50% 64%, 25% 70%, 100% 100%);
     clip-path: polygon(50% 64%, 25% 70%, 100% 100%);
-	
+    -webkit-clip-path: polygon(50% 64%, 25% 70%, 100% 100%);
 }
-#t7:hover + #title7{
-	 display: block;
+
+#t7:hover+#title7 {
+    display: block;
 }
+
 #t8 {
-	position: absolute;
-	bottom:15%;
-	right: ;
-	left: 3%;
-	top: ;
+    position: absolute;
+    bottom: 15%;
+    right: ;
+    left: 3%;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
     clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
-	
+    -webkit-clip-path: polygon(0% 70%, 20% 93%, 100% 93%);
 }
-#t8:hover + #title8{
-	 display: block;
+
+#t8:hover+#title8 {
+    display: block;
 }
 
 #t9 {
-	position: absolute;
-	bottom:35%;
-	right: 300px;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 35%;
+    right: 300px;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path:polygon(30% 70%, 40% 90%, 67% 100%);
     clip-path: polygon(30% 70%, 40% 90%, 67% 100%);
-	
+    -webkit-clip-path: polygon(30% 70%, 40% 90%, 67% 100%);
 }
-#t9:hover + #title9{
-	 display: block;
+
+#t9:hover+#title9 {
+    display: block;
 }
+
 #t10 {
-	position: absolute;
-	bottom:25%;
-	right: 60%;
-	left: ;
-	top: ;
+    position: absolute;
+    bottom: 25%;
+    right: 60%;
+    left: ;
+    top: ;
     /* The points are: centered top, left bottom, right bottom */
-	-webkit-clip-path: polygon(65% 55%,45% 50%, 80% 100%);
-    clip-path: polygon(65% 55%,45% 50%, 80% 100%);
-	
+    clip-path: polygon(65% 55%, 45% 50%, 80% 100%);
+    -webkit-clip-path: polygon(65% 55%, 45% 50%, 80% 100%);
 }
-#t10:hover + #title10{
-	 display: block;
+
+#t10:hover+#title10 {
+    display: block;
 }
+
 header a:hover {
     color: #999;
 }
@@ -212,12 +243,12 @@ body {
     background-color: #fff;
     width: 100%;
     height: 100%;
-	overflow: hidden;
+    overflow: hidden;
     /* overflow-y: scroll; */
 }
 
 header {
-	display: block;
+    display: block;
     top: 0;
     left: 0;
     /* width: 100%; */
@@ -263,7 +294,6 @@ header ul li a {
     font-size: 1.5em;
 }
 
-
 footer {
     clear: both;
     width: 100%;
@@ -281,68 +311,63 @@ footer p {
     color: #fff;
     /* font-weight: 700px; */
 }
-.icon
-{
+
+.icon {
     z-index: 100;
-	display: none;
-	color: #999;
-}
-.mainWork
-{
-	height: 100%;
-	width: 100%;
+    display: none;
+    color: #999;
 }
 
-.project
-{
+.mainWork {
+    height: 100%;
+    width: 100%;
+}
+
+.project {
     width: 100%;
     margin-left: 17%;
     display: inline-flex;
     margin-right: auto;
 }
 
-#img2
-{
+#img2 {
     height: 90vh;
-    padding-top: 5vh;
-    padding-bottom: auto;
+    margin-top: 5vh;
+    margin-bottom: auto;
 }
 
-#img3
-{
+#img3 {
     width: 100%;
-    padding-bottom: auto;
-}
-#multipleImages
-{
-margin-top: 5vh;
-width: 45vw;
-max-height: 90vh;
-overflow-y: scroll;
+    margin-bottom: auto;
 }
 
-#description
-{
+#multipleImages {
+    margin-top: 5vh;
+    width: 45vw;
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+#description {
     margin-top: 5vh;
     margin-left: 20px;
     width: 30%;
     max-width: 350px;
     height: 90vh;
     overflow-y: scroll;
-	font-family: 'AvenirNextLTProRegular',monospace,sans-serif;
+    font-family: 'AvenirNextLTProRegular';
     /* float: left; */
+}
 
-}
-iframe
-{
+iframe {
     width: 100%;
 }
-#videos
-{
+
+#videos {
     width: 100%;
 }
-#sound
-{
+
+#sound {
     padding: 5vh;
 }
 
@@ -353,72 +378,101 @@ iframe
     }
 
     #name {
-		font-size: 1em;
-	}
+        font-size: 1em;
+    }
 
-	header ul li a
-	{
-		font-size: 1em;
-	}
-
-
-
+    header ul li a {
+        font-size: 1em;
+    }
 }
 
-@media only screen and (max-width:600px) {
-header
-{
-	display: none;
-}
-.icon
-{
-	position: absolute;
-	top:25px;
-	right: 20px;
-	display: block;
-	float: right;
-}
-.project
-{
-    width: 80%;
-    margin-left: 17%;
-    margin-right: auto;
-    display: inline-block;
-}
 
-#img2
-{
-    width: 100%;
-    height: auto;
-}
 
-#img3
-{
-    width: 100%;
-    padding-bottom: auto;
-}
-#multipleImages
-{
-    width: 100%;
-    overflow-y: scroll;
-}
 
-#description
-{
-    width: 100%;
-    /* float: left; */
+@media only screen and (max-width:650px) {
+    #navBar {
+        display: none;
+    }
 
-}
+    .icon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: block;
+        float: right;
+    }
 
-html{
-	width:100vw;
-    overflow-y: scroll;
-}
+    .project {
+        width: 70%;
+        height: 90vh;
+        margin-top: 5vh;
+        margin-left: 23%;
+        margin-right: auto;
+        display: inline-block;
+        overflow: scroll;
+    }
 
-body {
-    width: 100%;
-    overflow-y: scroll;
-}
+    #img2 {
+        margin-top:0px;
+        width: 100%;
+        height: auto;
+    }
+
+    #img3 {
+        margin-top:0px;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    #multipleImages {
+        margin-top:0px;
+        width: 100%;
+        overflow-y: scroll;
+        padding-bottom: 20px;
+    }
+
+    #description {
+        clear: left;
+        margin-top:0px;
+        width: 100%;
+        overflow-y: visible;
+        margin-left: 0px;
+
+    }
+
+    html {
+        width: 100vw;
+        overflow-y: visible;
+    }
+
+    body {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .triangle {
+        width: 200px;
+        height: 300px;
+    }
+
+    .title {
+    		position: static;
+            max-width: 100%;
+            width:100%;
+            margin-top: 30%;
+    		display:none;
+    		color: #000;
+    		font-size:1em;
+    		text-align: center;
+    }
+    #statement, #about{
+        width:50%;
+        margin-right: 25%;
+        margin-left: auto;
+        margin-top: 25%;
+        height:60%;
+        overflow-y: scroll;
+    }
 
 
 }

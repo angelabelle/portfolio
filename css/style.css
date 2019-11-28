@@ -17,7 +17,7 @@ src: url('fonts/Fixture-Regular.ttf') format("truetype");
 }
 
 @font-face {
-    font-family: 'NextLTProRegular';
+    font-family: 'AvenirNextLTProRegular';
 src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
 }
 
@@ -180,7 +180,9 @@ html{
 }
 #t10:hover + #title10{
 	 display: block;
-}a:hover {
+}
+
+header a:hover {
     color: #999;
 }
 

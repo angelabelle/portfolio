@@ -17,7 +17,7 @@ src: url('fonts/Fixture-Regular.ttf') format("truetype");
 }
 
 @font-face {
-    font-family: 'AvenirNextLTProRegular';
+    font-family: 'NextLTProRegular';
 src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
 }
 
@@ -180,8 +180,7 @@ html{
 }
 #t10:hover + #title10{
 	 display: block;
-}
-header a:hover {
+}a:hover {
     color: #999;
 }
 
@@ -240,7 +239,7 @@ header ul li a {
     /* for links we need additional styling */
     color: #c9c18d;
     text-decoration: none;
-    font-family: 'AvenirNextLTProRegular'', monospace;
+    font-family: 'AvenirNextLTProRegular', monospace;
     font-size: 1.5em;
 }
 

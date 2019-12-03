@@ -31,6 +31,10 @@ src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
     padding: 0;
 }
 
+li a.active {
+  color: #f57542;
+}
+
 html {
     width: 100vw;
     height: 100vh;

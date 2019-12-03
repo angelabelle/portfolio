@@ -37,6 +37,9 @@ html {
     height: 100vh;
 }
 
+li a.active {
+  color: #f57542;
+}
 .triangle {
     width: 400px;
     height: 400px;

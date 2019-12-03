@@ -20,15 +20,21 @@ src: url('fonts/Fixture-Regular.ttf') format("truetype");
     font-family: 'AvenirNextLTProRegular';
 src: url('fonts/AvenirNextLTPro-Regular.otf') format("opentype");
 }
-/* uncomment lines below if you want your canvas to cover the whole page
-  you will also have to create canvas to the window dimensions
-  in your p5 sketch, use: createCanvas(windowWidth, windowHeight); */
-/* top: 0;
-  left: 0;
-  position: absolute; */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
 li a.active {

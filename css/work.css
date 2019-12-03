@@ -32,6 +32,18 @@
     padding: 0;
 }
 
+/* ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(245, 117, 66, .5);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
+} */
+
+
 html {
     width: 100vw;
     height: 100vh;

@@ -95,9 +95,7 @@ header ul li a {
 
 
 
-
-
-#name {
+#name h1{
     text-transform: uppercase;
     color: #fff;
     width: 100%;
@@ -137,7 +135,7 @@ footer p {
         height: 100vh;
     }
 
-    #name {
+    #name h1 {
         font-size: 3em;
     }
 
@@ -174,20 +172,21 @@ footer p {
           text-align: center;
            opacity: .6;
          -khtml-opacity: .6;
+
      }
+         .icon {
+             position: fixed;
+             top: 20px;
+             right: 20px;
+             display: block;
+             float: right;
+         }
+
+         #name h1 {
+             font-size: 1.5em;
+         }
         }
 
-    .icon {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: block;
-        float: right;
-    }
-
-    #name {
-        font-size: 1.5em;
-    }
 }
 
 /* canvas {

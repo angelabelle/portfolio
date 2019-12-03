@@ -14,7 +14,7 @@ function displayNav()
     var x = document.getElementById("navBar");
     var w = window.outerWidth;
     console.log("hello");
-    if (w >= 601)
+    if (w >= 650)
     {
          x.style.display = "block";
     }

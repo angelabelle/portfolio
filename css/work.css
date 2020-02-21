@@ -42,16 +42,15 @@
   background-color: rgba(245, 117, 66, .5);
   -webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
 } */
-
-
 html {
     width: 100vw;
     height: 100vh;
 }
 
 li a.active {
-  color: #f57542;
+    color: #f57542;
 }
+
 .triangle {
     width: 400px;
     height: 400px;
@@ -60,13 +59,14 @@ li a.active {
 .triangle {
     width: 400px;
     height: 400px;
-     vertical-align: top;
-      transition: opacity 0.3s;
-      -webkit-transition: opacity 0.3s;
-      opacity: .5;
+    vertical-align: top;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    opacity: .5;
     -khtml-opacity: .5;
 }
-.triangle:hover{
+
+.triangle:hover {
     opacity: 1;
     -khtml-opacity: 1;
 }
@@ -91,18 +91,13 @@ li a.active {
     font-size: 1.7em;
     text-align: center;
     text-transform: uppercase;
-
 }
 
-
-
-.title h1
-{
-font-family: 'FixtureItalic',monospace;
+.title h1 {
+    font-family: 'FixtureItalic', monospace;
 }
 
-.title p
-{
+.title p {
     margin-top: 5px;
     font-family: 'AvenirNextLTPro', monospace;
 }
@@ -401,37 +396,35 @@ iframe {
     }
 }
 
+@media screen and (max-width:2000px) {
+    #navBar {
+        margin-top: 50px;
+        display: none;
+        width: 100%;
+        position: relative;
+    }
 
+    header ul {
+        padding: 0px;
+    }
 
+    header ul li {
+        position: relative;
+        width: 100%;
+    }
 
-@media only screen and (max-width:650px) {
-        #navBar {
-            margin-top: 50px;
-            display: none;
-            width: 100%;
-            position: relative;
-        }
-        header ul
-        {
-            padding: 0px;
-        }
-        header ul li
-        {
-            position: relative;
-            width: 100%;
-
-        }
-            header ul li a {
-            background-color: #FFF;
-            position: relative;
-            padding: 8px;
-              margin: 1px 0px;
-              text-decoration: none;
-              display: block;
-              text-align: center;
-            }
+    header ul li a {
+        background-color: #FFF;
+        position: relative;
+        padding: 8px;
+        margin: 1px 0px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
 
     .icon {
+        z-index: 100;
         position: fixed;
         top: 20px;
         right: 20px;
@@ -450,19 +443,19 @@ iframe {
     }
 
     #img2 {
-        margin-top:0px;
+        margin-top: 0px;
         width: 100%;
         height: auto;
     }
 
     #img3 {
-        margin-top:0px;
+        margin-top: 0px;
         width: 100%;
         margin-bottom: auto;
     }
 
     #multipleImages {
-        margin-top:0px;
+        margin-top: 0px;
         width: 100%;
         overflow-y: scroll;
         padding-bottom: 20px;
@@ -470,11 +463,10 @@ iframe {
 
     #description {
         clear: left;
-        margin-top:0px;
+        margin-top: 0px;
         width: 100%;
         overflow-y: visible;
         margin-left: 0px;
-
     }
 
     html {
@@ -493,25 +485,24 @@ iframe {
     }
 
     .title {
-    		position: static;
-            max-width: 100%;
-            width:100%;
-            margin-top: 30%;
-    		display:none;
-    		color: #000;
-    		font-size:1em;
-    		text-align: center;
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30%;
+        display: none;
+        color: #000;
+        font-size: 1em;
+        text-align: center;
     }
-    #statement, #about{
-        width:50%;
+
+    #statement, #about {
+        width: 50%;
         margin-right: 25%;
         margin-left: auto;
         margin-top: 25%;
-        height:60%;
+        height: 60%;
         overflow-y: scroll;
     }
-
-
 }
 
 /* canvas {
